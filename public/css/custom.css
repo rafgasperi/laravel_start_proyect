@@ -1,0 +1,134 @@
+
+.msgBox{
+    display: none!important;
+}
+
+.form-control[disabled], .form-control[readonly] {
+    color: #000;
+}
+
+.badges-sales {
+    position: absolute;
+    z-index: 0;
+    left: 20px;
+    top: 10px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    font-weight: 700;
+}
+
+.page ul{
+    padding-left:3em;
+      list-style: disc;
+}
+
+.page ul li{
+
+}
+
+.btn-custom{
+    border: none;
+    border-radius: .4em;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .95em;
+    font-weight: 700;
+    padding: .6em .8em .8em;
+    text-decoration: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-transition: .2s;
+    transition: .2s;
+    vertical-align: middle;
+    box-shadow: inset 0 -.3em rgba(0,0,0,.4);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+}
+
+.btn-default{
+    background: #ededed;
+    color: #000;
+}
+
+label::after{
+    content: ":";
+}
+
+.checks label::after{
+    content: "";
+}
+
+fieldset{
+    margin: 1em 0;
+}
+
+fieldset legend{
+    background: #ccc;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 0;
+    color: #000;
+
+}
+
+.float-menu {
+    padding: 1em 5px;
+    position: fixed;
+    z-index: 99999;
+    top: 40%;
+    bottom: 50%;
+    right: 0;
+    background-color: #a43f3e;
+    border-color: #a43f3e;
+    border-radius: 5px 0 0 5px;
+    height: 60px;
+    color: #fff;
+
+}
+
+.float-menu i{
+    color: #fff;
+}
+
+
+#mensaje_modal .modal-body {
+    position: relative;
+    overflow-y: auto;
+    height: 600px;
+    max-height: 350px;
+    padding: 15px;
+}
+
+.list-group a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+    .panel-title{
+        width: 100%!important;
+    }
+
+    .dataTables_length {
+      border-bottom: none;
+    }
+
+    .dataTables_filter,.dataTables_length {
+        width: 50%;
+    }
+}
