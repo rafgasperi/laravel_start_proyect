@@ -7,11 +7,13 @@ login and dashboard.
 <ul>
   <li>run : composer update</li>
   <li>create database</li>
-  <li>config database parameters ands drivers on .env</li>
+  <li>config database parameters and drivers on .env</li>
   <li>run : php artisan migrate</li>
   <li>run : php artisan db:seed</li>
 </ul>
+<h3>If you want VUE datatable Component run npm install</h3>
 
 <p>After seed the admin user credentials are:</p>
 <p>User : admin@admin.com</p>
 <p>Password : test</p>
+

@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- START PAGE CONTAINER -->
-    <div class="page-container">
+    <div class="page-container" id="app">
         @include('partials.sidebar')
            <!-- PAGE CONTENT -->
            <div class="page-content">

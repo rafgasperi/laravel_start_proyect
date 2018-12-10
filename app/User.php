@@ -53,4 +53,29 @@ class User extends BaseModel
     public function roles(){
         return $this->belongsToMany('\App\Role','role_users');
     }
+
+    public function getApiData()
+    {
+        $model = $this->all();
+        return response()
+            ->json([
+                'model' => $model,
+                'orderables' => [
+                    ['title'=> 'Id', 'name'=> 'id'],
+                    ['title'=> 'First Name', 'name'=> 'first_name'],
+                    ['title'=> 'Last Name', 'name'=> 'last_name'],
+                    ['title'=> 'Email', 'name'=> 'email'],
+                ],
+                'filterGroups' =>[
+                   'name'=>'Usuarios',
+                   'filters'=> [
+                                   ['title'=> 'Id', 'name'=> 'id', 'type'=> 'numeric'],
+                                   ['title'=> 'First Name', 'name'=> 'first_name', 'type'=> 'string'],
+                                   ['title'=> 'Last Name', 'name'=> 'last_name', 'type'=> 'string'],
+                                   ['title'=> 'Email', 'name'=> 'email', 'type'=> 'string'],
+                                   ['title'=> 'Created At', 'name'=> 'created_at', 'type'=> 'datetime'],
+                               ]
+                ],
+            ]);
+    }
 }

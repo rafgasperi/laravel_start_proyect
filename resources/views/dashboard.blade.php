@@ -103,7 +103,35 @@
 
             </div>
         </div>
+
         <!-- END WIDGETS -->
+        <div class="row">
+            <h1>Vue DataTable Sample</h1>
+            <data-viewer source="/api/idea" title="Ideas" per_page="5" show_new="idea" show_detail="idea" show_edit="idea" show_delete="idea"/>
+
+            <filterable url="{{ url('api/users') }}"></filterable>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>User</th>
+                    <th>First Name</th>
+                    <th>Lasta Name</th>
+                    <th>Email</th>
+                    <th>Created At</th>
+                </tr>
+                </thead>
+                @foreach(\App\User::all() as $u)
+                <tr>
+                    <td>{{$u->id}}</td>
+                    <td>{{$u->first_name}}</td>
+                    <td>{{$u->last_name}}</td>
+                    <td>{{$u->email}}</td>
+                    <td>{{$u->created_at}}</td>
+                </tr>
+                @endforeach
+            </filterable>
+
+        </div>
     </div>
     <!-- END PAGE CONTENT WRAPPER -->
     @section('scripts')
