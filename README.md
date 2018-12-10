@@ -6,6 +6,7 @@ login and dashboard.
 <h2>Steps</h2>
 <ul>
   <li>run : composer install</li>
+  <li>Give write permision to storage/ and bootstrap/cache folder</>
   <li>create database</li>
   <li>config database parameters ands drivers on .env</li>
   <li>run : php artisan migrate</li>
