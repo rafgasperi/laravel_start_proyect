@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
         \Illuminate\Support\Facades\DB::transaction(function (){
             $this->call(CreateGroupSedder::class);
             $this->call(CreateAdminUser::class);
+            $this->call(CreateUserSeeder::class);
         });
     }
 }
