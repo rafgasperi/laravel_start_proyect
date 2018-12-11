@@ -36,6 +36,7 @@ class MigrationCartalystSentinel extends Migration
             $table->string('code');
             $table->boolean('completed')->default(0);
             $table->timestamp('completed_at')->nullable();
+            $table->softDeletes();
             $table->timestamps();
 
             $table->engine = 'InnoDB';
