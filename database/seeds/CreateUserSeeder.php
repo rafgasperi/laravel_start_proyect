@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
-use Sentinel;
 
 class CreateUserSeeder extends Seeder
 {
@@ -27,7 +26,7 @@ class CreateUserSeeder extends Seeder
 
             $u->save();
             $role = Sentinel::findRoleByName('Usuarios');
-            $role->usuarios()->attach($u);
+            $role->users()->attach($u);
 
         }
     }
