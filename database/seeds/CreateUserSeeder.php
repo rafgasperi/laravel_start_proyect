@@ -20,7 +20,6 @@ class CreateUserSeeder extends Seeder
 
             $u = Sentinel::registerAndActivate([
                      'email' => $faker->email,
-                  'username' => $faker->userName,
                    'password'=> 'test',
                 'first_name' => $faker->firstName($gender),
                  'last_name' => $faker->lastName

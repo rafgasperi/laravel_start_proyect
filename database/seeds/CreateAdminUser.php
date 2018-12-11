@@ -13,11 +13,10 @@ class CreateAdminUser extends Seeder
     {
         // Register a new user
         $user = Sentinel::registerAndActivate([
-            'email'    => 'admin@admin.com',
-            'username' => '8111111',
-            'first_name'=>'Administrador',
-            'last_name'=>'del Sistema',
-            'password' => 'test',
+            'email'      => 'admin@admin.com',
+            'first_name' =>'Administrador',
+            'last_name'  =>'del Sistema',
+            'password'   => 'test',
         ]);
 
         $role = Sentinel::findRoleByName('Administratores');
