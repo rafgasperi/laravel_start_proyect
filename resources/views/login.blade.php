@@ -30,7 +30,7 @@
                 <div class="small-6 large-centered columns">
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input placeholder="Cédula" autofocus="autofocus" name="username" type="text"  value="{{ Request::old('username') }}" class="form-control">
+                            <input placeholder="Email" autofocus="autofocus" name="email" type="email"  value="{{ Request::old('email') }}" class="form-control">
                         </div>
                     </div>
 
